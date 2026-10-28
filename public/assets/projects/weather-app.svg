@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f2b48"/>
+      <stop offset="50%" stop-color="#163e65"/>
+      <stop offset="100%" stop-color="#0c172a"/>
+    </linearGradient>
+    <linearGradient id="sunGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="480" fill="url(#skyGrad)"/>
+  
+  <!-- Main Weather Card -->
+  <g transform="translate(60, 50)">
+    <!-- Location & Status -->
+    <rect x="0" y="0" width="380" height="380" rx="16" fill="#0f172a" fill-opacity="0.8" stroke="#38bdf8" stroke-opacity="0.3" stroke-width="1"/>
+    
+    <text x="35" y="45" fill="#f8fafc" font-size="24" font-family="sans-serif" font-weight="bold">San Francisco, CA</text>
+    <text x="35" y="70" fill="#94a3b8" font-size="14" font-family="sans-serif">Partly Cloudy • Radar Updated</text>
+
+    <!-- Sun & Cloud Graphic -->
+    <circle cx="280" cy="120" r="38" fill="url(#sunGrad)"/>
+    <!-- stylized cloud -->
+    <ellipse cx="240" cy="140" rx="45" ry="25" fill="#cbd5e1" opacity="0.9"/>
+    <circle cx="215" cy="130" r="28" fill="#e2e8f0"/>
+    <circle cx="255" cy="125" r="22" fill="#e2e8f0"/>
+
+    <text x="35" y="160" fill="#f8fafc" font-size="64" font-family="sans-serif" font-weight="bold">22°C</text>
+    <text x="35" y="195" fill="#38bdf8" font-size="16" font-family="sans-serif" font-weight="500">Feels like 20° • H: 24° L: 14°</text>
+
+    <line x1="35" y1="225" x2="345" y2="225" stroke="#334155" stroke-width="1"/>
+
+    <!-- 4 Metrics row -->
+    <g transform="translate(35, 250)">
+      <text x="0" y="0" fill="#64748b" font-size="11">WIND</text>
+      <text x="0" y="22" fill="#f8fafc" font-size="15" font-weight="600">14 km/h</text>
+      
+      <text x="80" y="0" fill="#64748b" font-size="11">HUMIDITY</text>
+      <text x="80" y="22" fill="#f8fafc" font-size="15" font-weight="600">68%</text>
+
+      <text x="170" y="0" fill="#64748b" font-size="11">VISIBILITY</text>
+      <text x="170" y="22" fill="#f8fafc" font-size="15" font-weight="600">10 km</text>
+
+      <text x="250" y="0" fill="#64748b" font-size="11">AQI</text>
+      <text x="250" y="22" fill="#10b981" font-size="15" font-weight="600">28 Good</text>
+    </g>
+
+    <!-- Hourly Mini Forecast -->
+    <g transform="translate(35, 320)">
+      <rect x="0" y="0" width="55" height="42" rx="6" fill="#1e293b"/>
+      <text x="12" y="18" fill="#94a3b8" font-size="11">Now</text>
+      <text x="12" y="34" fill="#f8fafc" font-size="12" font-weight="bold">22°</text>
+
+      <rect x="65" y="0" width="55" height="42" rx="6" fill="#1e293b"/>
+      <text x="75" y="18" fill="#94a3b8" font-size="11">14:00</text>
+      <text x="75" y="34" fill="#f8fafc" font-size="12" font-weight="bold">23°</text>
+
+      <rect x="130" y="0" width="55" height="42" rx="6" fill="#1e293b"/>
+      <text x="140" y="18" fill="#94a3b8" font-size="11">15:00</text>
+      <text x="140" y="34" fill="#f8fafc" font-size="12" font-weight="bold">24°</text>
+
+      <rect x="195" y="0" width="55" height="42" rx="6" fill="#1e293b"/>
+      <text x="205" y="18" fill="#94a3b8" font-size="11">16:00</text>
+      <text x="205" y="34" fill="#f8fafc" font-size="12" font-weight="bold">21°</text>
+
+      <rect x="260" y="0" width="55" height="42" rx="6" fill="#1e293b"/>
+      <text x="270" y="18" fill="#94a3b8" font-size="11">17:00</text>
+      <text x="270" y="34" fill="#f8fafc" font-size="12" font-weight="bold">19°</text>
+    </g>
+  </g>
+
+  <!-- Interactive Map & 7-Day Forecast Right Side -->
+  <g transform="translate(470, 50)">
+    <!-- Radar Preview Card -->
+    <rect width="270" height="175" rx="16" fill="#0f172a" fill-opacity="0.8" stroke="#334155" stroke-width="1"/>
+    <text x="20" y="30" fill="#f8fafc" font-size="14" font-weight="bold">Precipitation Radar</text>
+    <!-- Map texture simulation -->
+    <rect x="20" y="45" width="230" height="110" rx="8" fill="#1e293b"/>
+    <circle cx="120" cy="95" r="40" fill="#0ea5e9" opacity="0.35"/>
+    <circle cx="150" cy="105" r="25" fill="#38bdf8" opacity="0.45"/>
+    <circle cx="130" cy="100" r="6" fill="#f59e0b"/>
+
+    <!-- Weekly Forecast Card -->
+    <rect y="195" width="270" height="185" rx="16" fill="#0f172a" fill-opacity="0.8" stroke="#334155" stroke-width="1"/>
+    <text x="20" y="225" fill="#f8fafc" font-size="14" font-weight="bold">7-Day Outlook</text>
+    
+    <g transform="translate(20, 245)">
+      <text x="0" y="12" fill="#cbd5e1" font-size="12">Mon</text>
+      <circle cx="65" cy="8" r="6" fill="#fbbf24"/>
+      <rect x="100" y="5" width="70" height="6" rx="3" fill="#334155"/>
+      <rect x="120" y="5" width="40" height="6" rx="3" fill="#38bdf8"/>
+      <text x="190" y="12" fill="#f8fafc" font-size="12">24° / 15°</text>
+
+      <text x="0" y="42" fill="#cbd5e1" font-size="12">Tue</text>
+      <circle cx="65" cy="38" r="6" fill="#60a5fa"/>
+      <rect x="100" y="35" width="70" height="6" rx="3" fill="#334155"/>
+      <rect x="115" y="35" width="35" height="6" rx="3" fill="#38bdf8"/>
+      <text x="190" y="42" fill="#f8fafc" font-size="12">21° / 13°</text>
+
+      <text x="0" y="72" fill="#cbd5e1" font-size="12">Wed</text>
+      <circle cx="65" cy="68" r="6" fill="#fbbf24"/>
+      <rect x="100" y="65" width="70" height="6" rx="3" fill="#334155"/>
+      <rect x="125" y="65" width="42" height="6" rx="3" fill="#38bdf8"/>
+      <text x="190" y="72" fill="#f8fafc" font-size="12">25° / 16°</text>
+
+      <text x="0" y="102" fill="#cbd5e1" font-size="12">Thu</text>
+      <circle cx="65" cy="98" r="6" fill="#fbbf24"/>
+      <rect x="100" y="95" width="70" height="6" rx="3" fill="#334155"/>
+      <rect x="128" y="95" width="45" height="6" rx="3" fill="#38bdf8"/>
+      <text x="190" y="102" fill="#f8fafc" font-size="12">26° / 17°</text>
+    </g>
+  </g>
+</svg>
+

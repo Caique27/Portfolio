@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="fitBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1320"/>
+      <stop offset="100%" stop-color="#111c30"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="480" fill="url(#fitBg)"/>
+
+  <!-- Left: Mobile phone mockup preview -->
+  <g transform="translate(60, 40)">
+    <rect width="250" height="400" rx="32" fill="#0f172a" stroke="#334155" stroke-width="3"/>
+    <!-- Speaker & Notch -->
+    <rect x="85" y="10" width="80" height="18" rx="9" fill="#1e293b"/>
+    <!-- Screen content -->
+    <text x="25" y="55" fill="#f8fafc" font-size="18" font-family="sans-serif" font-weight="bold">Today's Workout</text>
+    <text x="25" y="75" fill="#94a3b8" font-size="12">Hypertrophy • Push Day</text>
+
+    <!-- Workout Item 1 -->
+    <rect x="20" y="95" width="210" height="65" rx="12" fill="#1e293b"/>
+    <rect x="35" y="110" width="36" height="36" rx="8" fill="#ef4444" opacity="0.2"/>
+    <text x="44" y="133" fill="#ef4444" font-size="18">🏋️</text>
+    <text x="80" y="120" fill="#f8fafc" font-size="13" font-weight="bold">Barbell Bench Press</text>
+    <text x="80" y="138" fill="#94a3b8" font-size="11">4 sets × 8-10 reps • 105 kg</text>
+
+    <!-- Workout Item 2 -->
+    <rect x="20" y="170" width="210" height="65" rx="12" fill="#1e293b"/>
+    <rect x="35" y="185" width="36" height="36" rx="8" fill="#3b82f6" opacity="0.2"/>
+    <text x="44" y="208" fill="#3b82f6" font-size="18">⚡</text>
+    <text x="80" y="195" fill="#f8fafc" font-size="13" font-weight="bold">Incline DB Press</text>
+    <text x="80" y="213" fill="#94a3b8" font-size="11">3 sets × 12 reps • 36 kg</text>
+
+    <!-- Workout Item 3 -->
+    <rect x="20" y="245" width="210" height="65" rx="12" fill="#1e293b"/>
+    <rect x="35" y="260" width="36" height="36" rx="8" fill="#10b981" opacity="0.2"/>
+    <text x="44" y="283" fill="#10b981" font-size="18">💪</text>
+    <text x="80" y="270" fill="#f8fafc" font-size="13" font-weight="bold">Cable Lateral Raise</text>
+    <text x="80" y="288" fill="#94a3b8" font-size="11">4 sets × 15 reps • 14 kg</text>
+
+    <!-- Complete Workout CTA Button -->
+    <rect x="20" y="335" width="210" height="42" rx="12" fill="#10b981"/>
+    <text x="65" y="361" fill="#ffffff" font-size="13" font-weight="bold">Finish &amp; Log Workout</text>
+  </g>
+
+  <!-- Right: Activity Rings & Heart Rate Analytics -->
+  <g transform="translate(360, 40)">
+    <rect width="380" height="190" rx="16" fill="#1e293b"/>
+    <text x="25" y="35" fill="#f8fafc" font-size="16" font-weight="bold">Metabolic &amp; Activity Goals</text>
+    
+    <!-- 3 Concentric Activity Rings -->
+    <circle cx="95" cy="115" r="55" fill="none" stroke="#0f172a" stroke-width="12"/>
+    <circle cx="95" cy="115" r="55" fill="none" stroke="#ef4444" stroke-width="12" stroke-dasharray="290 350"/>
+    
+    <circle cx="95" cy="115" r="40" fill="none" stroke="#0f172a" stroke-width="10"/>
+    <circle cx="95" cy="115" r="40" fill="none" stroke="#10b981" stroke-width="10" stroke-dasharray="210 260"/>
+
+    <circle cx="95" cy="115" r="26" fill="none" stroke="#0f172a" stroke-width="8"/>
+    <circle cx="95" cy="115" r="26" fill="none" stroke="#06b6d4" stroke-width="8" stroke-dasharray="140 170"/>
+
+    <!-- Ring Details -->
+    <g transform="translate(180, 75)">
+      <circle cx="10" cy="10" r="5" fill="#ef4444"/>
+      <text x="25" y="14" fill="#cbd5e1" font-size="13">Move: <tspan fill="#f8fafc" font-weight="bold">680 / 750 kcal</tspan></text>
+
+      <circle cx="10" cy="40" r="5" fill="#10b981"/>
+      <text x="25" y="44" fill="#cbd5e1" font-size="13">Exercise: <tspan fill="#f8fafc" font-weight="bold">52 / 45 min</tspan></text>
+
+      <circle cx="10" cy="70" r="5" fill="#06b6d4"/>
+      <text x="25" y="74" fill="#cbd5e1" font-size="13">Stand: <tspan fill="#f8fafc" font-weight="bold">11 / 12 hrs</tspan></text>
+    </g>
+
+    <!-- Bottom: Heart Rate & Volume Progression -->
+    <g transform="translate(0, 210)">
+      <rect width="380" height="190" rx="16" fill="#1e293b"/>
+      <text x="25" y="35" fill="#f8fafc" font-size="16" font-weight="bold">Heart Rate &amp; Load Intensity</text>
+      <text x="25" y="55" fill="#94a3b8" font-size="12">Peak: 164 bpm • Avg: 132 bpm</text>
+
+      <!-- ECG/Heart rate curve -->
+      <path d="M 30 130 L 70 130 L 85 145 L 100 80 L 115 160 L 130 110 L 145 130 L 200 130 L 215 145 L 230 70 L 245 165 L 260 110 L 275 130 L 350 130" fill="none" stroke="#ef4444" stroke-width="2.5"/>
+
+      <!-- Time axis -->
+      <text x="30" y="170" fill="#64748b" font-size="11">0m</text>
+      <text x="130" y="170" fill="#64748b" font-size="11">15m</text>
+      <text x="240" y="170" fill="#64748b" font-size="11">30m</text>
+      <text x="340" y="170" fill="#64748b" font-size="11">45m</text>
+    </g>
+  </g>
+</svg>
+
