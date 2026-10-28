@@ -31,7 +31,7 @@ export const Hero: React.FC = () => {
             <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-lg bg-slate-900/90 border border-slate-700/80 shadow-sm">
               <Terminal className="w-4 h-4 text-blue-400" />
               <span className="text-xs sm:text-sm font-mono font-semibold uppercase tracking-wider text-blue-300">
-                {'Software Engineer'}
+                {'Hello, I am Caique!'}
               </span>
             </div>
 
